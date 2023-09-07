@@ -4,7 +4,7 @@
  *
  * Description: A c program that print size of various types with sizeof
  *
- * Retern: Always 0 (success)
+ * Return: Always 0 (success)
 */
 
 int main(void)
