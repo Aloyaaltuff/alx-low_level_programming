@@ -6,12 +6,12 @@
  *
  * Description: print the value of n statment
  *
- * return; always 0 (success)
+ * Return; always 0 (success)
 */
 
 int main(void)
 {
-	int n;
+	int n, digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
