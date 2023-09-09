@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main -entrey point
+/**
+ * main -entrey point
  *
  * Description: nigative positive
  *
@@ -16,11 +17,11 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n = 0);
-		printf("%i\n",is zero ,n);
+	if (n == 0);
+		printf("%i is zero\n", n);
 	else if (n > 0);
-		pintf("%i\n", is positive ,n);
+		pintf("%i is positive\n", n);
 	else if (n < 0);
-		printf("%i\n",is negative ,n);
+		printf("%i is negative\n", n);
 	return (0);
 }
