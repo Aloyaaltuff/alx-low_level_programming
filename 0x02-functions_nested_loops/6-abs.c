@@ -1,4 +1,5 @@
 #include"main.h"
+#include<srdio.h>
 
 /**
  * _abc - function that computes the absolute value of an integer
