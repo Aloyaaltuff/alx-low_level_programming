@@ -1,4 +1,4 @@
-#include<main.h>
+#include <main.h>
 
 /**
  * main - entrey point
@@ -13,7 +13,8 @@ int main(void)
 {
 	char str[] = "_putchar";
 	int ch;
-	for (ch = 0: ch < 8; ch++)
+
+	for (ch = 0; ch < 8; ch++)
 
 	_putchar("\n");
 
