@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - entrey point
+ * main - Entrey point
  *
- * Description: print putchar
+ * Description: print _putchar using putchar prototype
  *
  * Return: Always 0 (succsess)
  *
@@ -15,7 +15,7 @@ int main(void)
 	int ch;
 
 	for (ch = 0; ch < 8; ch++)
-		_putchar(str(char));
-	_putchar("\n");
+		_putchar(str[ch]);
+	_putchar('\n');
 	return (0);
 }
