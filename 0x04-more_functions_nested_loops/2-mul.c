@@ -1,10 +1,10 @@
 #include"main.h"
 
 /**
- * _mul - multibli two intiger
+ * mul - multiblies two intigeres
  *
- * @a: input for integer
- * @b: input for integer
+ * @a: first  input
+ * @b: scond input
  *
  * Return: result
 */
