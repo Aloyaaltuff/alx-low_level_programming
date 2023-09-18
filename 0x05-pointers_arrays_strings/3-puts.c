@@ -1,15 +1,14 @@
 #include "main.h"
-#include <string.h>
 
 /**
- *_put - print a string
+ *_puts - print a string
  *
  * @str: string input
  *
  * Return: 0
 */
 
-void _put(char *str)
+void _puts(char *str)
 {
 	while (*str != '\0')
 	{
