@@ -10,10 +10,10 @@
 
 int strlen(char *s)
 {
-	char *s = "my first strlen!";
-	int len;
+	int counter;
 
-	len = strlen(*s);
-	printf("strlen(*s) : %d\n", len);
-	return (0);
+	for (counter = 0; *s != '\0'; s++)
+		++counter;
+
+	return (counter);
 }
