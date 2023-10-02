@@ -2,8 +2,8 @@
 
 /**
  * main - program that print the number of the arguments
- * @argc: integer
- * @argv: the value of the argument
+ * @argc: number of command line
+ * @argv: pointer to an array
  * Return: 0
 */
 
