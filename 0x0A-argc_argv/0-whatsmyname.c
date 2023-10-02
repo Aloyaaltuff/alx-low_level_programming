@@ -6,13 +6,9 @@
  * Return: 0 always
 */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("argv[%d] = %s", i, argv[i]);
-	}
+	(void)argc;
+	printf("%s\n", argv[0]);
 	return (0);
 }
