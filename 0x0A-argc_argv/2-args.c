@@ -12,6 +12,7 @@ int main(int argc, char const *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		printf("%s\n", argv[i]);
+		argc--;
 	}
 	return (0);
 }
