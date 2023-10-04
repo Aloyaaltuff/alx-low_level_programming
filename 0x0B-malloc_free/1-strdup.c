@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
 * _strdup - returns a pointer to a newly allocated
 *space in memory, which contains a copy of the
@@ -7,6 +7,7 @@
 *@str:String to be copied
 *
 *Return: NULL in case of error, pointer to allocated
+*space
 */
 
 char *_strdup(char *str)
@@ -28,4 +29,9 @@ char *_strdup(char *str)
 	{
 		cpy[index] = str[index];
 	}
+
+	cpy[len] = '\0';
+
+	return (cpy);
+
 }
