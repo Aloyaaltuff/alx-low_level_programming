@@ -28,4 +28,4 @@ char *_strdup(char *str)
 	{
 		cpy[index] = str[index];
 	}
-}
+
