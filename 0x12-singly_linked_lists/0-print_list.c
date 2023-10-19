@@ -5,7 +5,7 @@
  * @str: pointer
  * Return: 0 if str is NULL
 */
-struct size_t print_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
 	size_t i = 0;
 
