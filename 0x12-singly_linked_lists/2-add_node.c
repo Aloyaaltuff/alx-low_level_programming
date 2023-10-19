@@ -1,30 +1,47 @@
 #include "lists.h"
-
 /**
- * add_node - adds a node to the start of list
- * @head: address of pointer to head
- * @str: str field
- *
- * Return: size of list
-*/
+ * add_node - adds a new node at the beginning of a list_t list
+ * @head: double pointer to list_t
+ * @str: pointer to the first node in list_t
+ * Return: a poitner to the new string or NULL if it failed
+ */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_head = malloc(sizeof(list_t));
+	int runner;
+	list_t *new_node;
 
-	if (!head || !new_head)
+	if (!str)
 		return (NULL);
-	if (str)
+	/* must allocate memory for our new node pointer */
+	new_node = malloc(sizeof(list_t));
+	runner = 0;
+	if (new_node)
 	{
-		new_head->str = strdup(str);
-		if (!new_head->str)
+		/* derefence what str is pointing to */
+		/* create a copy with strdup */
+		new_node->str = strdup(str);
+		/* if is not the new pointer to the new string duplicate */
+		if (!new_node->str)
 		{
-			free(new_head);
+			/* we freed the memory allocated */
+			/*and function return null */
+			free(new_node);
 			return (NULL);
 		}
-		new_head->len = _strlen(new_head->str);
+		while (new_node->str[runner])
+			runner++;
+		/* now we must tell the new string will be the new fisrt node */
+		/* of our linked list */
+		/* and we conect it to head telling it the next node*/
+		/* the pointer is going to point is head node */
+		/* in that instance the head now will be the */
+		/* node with the pointer duplicate */
+		new_node->len = runner;
+		new_node->next = *head;
+		*head = new_node;
+		/* now return the pointer to the address of the new string */
+		return (new_node);
 	}
-	new_head->next = *head;
-	*head = new_head;
-	return (new_head);
+	/* null if it failed */
+	return (NULL);
 }
-
